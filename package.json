@@ -1,0 +1,38 @@
+{
+  "name": "Toptalla",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "Toptalla",
+  "scripts": {},
+  "keywords": [
+    "Cypress",
+    "BDD",
+    "Toptalla",
+    "Landing"
+  ],
+  "author": "Ali Ibrahim",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": [
+      "[filepath]/**/*.{js,ts}",
+      "[filepath].{js,ts}",
+      "cypress/e2e/step_definitions/*.{js,ts}"
+    ]
+  },
+  "dependencies": {
+    "@shelex/cypress-allure-plugin": "^2.40.2",
+    "@testing-library/cypress": "^8.0.3",
+    "cypress": "^10.11.0"
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^21.0.3",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.3",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^3.8.2",
+    "cypress-on-fix": "^1.0.3",
+    "cypress-real-events": "^1.13.0",
+    "cypress-xpath": "^2.0.1"
+  }
+}

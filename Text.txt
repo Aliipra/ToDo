@@ -1,0 +1,41 @@
+
+
+
+# Scenario: Security validation for input fields
+#     Given I visit the to-do website
+#     When I enter malicious script "<script>alert('Hacked!')</script>" in the registration form
+#     Then the input should be sanitized
+#     And the script should not execute
+
+
+
+
+
+// When("I click the logout button", () => {
+//   cy.get("[data-testid='logout-button']").click();
+// });
+
+// Then("I should be redirected to the login page", () => {
+//   cy.url().should("include", "/login");
+// });
+
+// Then("I should not be able to access the home page without logging in again", () => {
+//   cy.visit("/home");
+//   cy.url().should("include", "/login");
+// });
+
+// When("I enter malicious script {string} in the registration form", (script) => {
+//   cy.get("[data-testid='name-input']").type(script);
+//   cy.get("[data-testid='register-button']").click();
+// });
+
+// Then("the input should be sanitized", () => {
+//   cy.get("[data-testid='name-input']").should("not.have.value", "<script>alert('Hacked!')</script>");
+// });
+
+// Then("the script should not execute", () => {
+//   // Verify no alert is shown
+//   cy.on("window:alert", (str) => {
+//     throw new Error("Unexpected alert: " + str);
+//   });
+// });
