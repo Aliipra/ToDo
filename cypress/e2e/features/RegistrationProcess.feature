@@ -13,8 +13,8 @@ Feature: Automation test for the Registration Process
         And I click on the submit button
         Then the registration should be successful
         Examples:
-            | firstName | lastName | email           | password      |
-            | Ali       | Ibra     | test9@email.com | Pop@123456789 |
+            | firstName | lastName | email            | password      |
+            | Ali       | Ibra     | test10@email.com | Pop@123456789 |
 
     Scenario: Registration on the To-Do page - Negative
 
